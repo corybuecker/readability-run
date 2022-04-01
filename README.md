@@ -4,7 +4,7 @@ This is a 30-line wrapper around JSDOM, [Readability](https://github.com/mozilla
 
 It is meant to be deployed to a public [Cloud Run](https://cloud.google.com/run) endpoint, for example:
 
-    npx tsc --outDir ./
+    npx tsc
     gcloud run deploy
 
 When deploying, Cloud Run will ask you for your region and project name. After it builds and deploys a Node image, you can POST to the endpoint and receive sanitized content back.
