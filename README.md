@@ -2,7 +2,7 @@
 
 This is a 30-line wrapper around JSDOM, [Readability](https://github.com/mozilla/readability), and DOMPurify. It accepts anything, ideally HTML, via a POST request and will attempt to extract the document with Readability and then sanitize the output with DOMPurify.
 
-It is meant to be deployed to a public Cloud Run endpoint, for example:
+It is meant to be deployed to a public [Cloud Run](https://cloud.google.com/run) endpoint, for example:
 
     npx tsc --outDir ./
     gcloud run deploy
